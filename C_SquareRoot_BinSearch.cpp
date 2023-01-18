@@ -15,26 +15,23 @@ double accuracy = 0.0000001;
 double func(double c) {
     double left = 0;
     double right = std::sqrt(c);
-    while (left <= right) {
-        double mid = left + (right - left) / 2;
+    double mid;
+    while (right - left > accuracy) {
+        mid = (right + left) / 2;
         double val = mid * mid + std::sqrt(mid);
-        double difference = (val - c) > 0 ? val - c : c - val;
-        if (difference < accuracy) {
-            return mid;
+        if (val - c > 0) {
+            right = mid;
         } else {
-            if (val > c) {
-                right = mid;
-            } else {
-                left = mid;
-            }
+            left = mid;
         }
     }
+    return mid;
 }
 
-//int main() {
-//    double c;
-//    std::cin >> c;
-//    std::cout << std::fixed;
-//    std::cout.precision(6);
-//    std::cout << func(c);
-//}
+int main() {
+    double c;
+    std::cin >> c;
+    std::cout << std::fixed;
+    std::cout.precision(6);
+    std::cout << func(c);
+}
