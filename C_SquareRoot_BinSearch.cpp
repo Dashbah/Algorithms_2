@@ -31,10 +31,10 @@ double func(double c) {
     }
 }
 
-int main() {
-    double c;
-    std::cin >> c;
-    std::cout << std::fixed;
-    std::cout.precision(6);
-    std::cout << func(c);
-}
+//int main() {
+//    double c;
+//    std::cin >> c;
+//    std::cout << std::fixed;
+//    std::cout.precision(6);
+//    std::cout << func(c);
+//}
