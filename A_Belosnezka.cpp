@@ -21,6 +21,6 @@ std::pair<int, int> firstSecMax() {
         }
     } while (input != 0);
     return {max_height, second_max_height};
-    std::cout << max_height << std::endl;
-    std::cout << second_max_height << std::endl;
+    // std::cout << max_height << std::endl;
+    // std::cout << second_max_height << std::endl;
 }
