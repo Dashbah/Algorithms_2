@@ -3,4 +3,4 @@ project(Algorithms_2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algorithms_2 C_SquareRoot_BinSearch.cpp)
+add_executable(Algorithms_2 D_Lengths.cpp)
