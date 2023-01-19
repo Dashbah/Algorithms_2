@@ -10,9 +10,8 @@
  * @param c
  */
 
-double accuracy = 0.0000001;
-
 double func(double c) {
+    double accuracy = 0.0000001;
     double left = 0;
     double right = std::sqrt(c);
     double mid;
@@ -28,10 +27,10 @@ double func(double c) {
     return mid;
 }
 
-int main() {
-    double c;
-    std::cin >> c;
-    std::cout << std::fixed;
-    std::cout.precision(6);
-    std::cout << func(c);
-}
+//int main() {
+//    double c;
+//    std::cin >> c;
+//    std::cout << std::fixed;
+//    std::cout.precision(6);
+//    std::cout << func(c);
+//}
