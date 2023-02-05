@@ -4,7 +4,7 @@
 #include <vector>
 #include <iostream>
 
-void countingSort(const std::vector<int> &vec, std::vector<int> &result, int min, int max) {
+std::vector<int> countingSort(const std::vector<int> &vec, int min, int max) {
     int k = max - min + 1;
     std::vector<int> b(k);
     for (auto value : vec) {
@@ -14,13 +14,17 @@ void countingSort(const std::vector<int> &vec, std::vector<int> &result, int min
     for (int i = 1; i < k; ++i) {
         b[i] = b[i - 1] + b[i];
     }
-
+    std::vector<int> result(vec.size());
     for (int i = vec.size() - 1; i >= 0; --i) {
         result[--b[vec[i] - min]] = vec[i];
     }
+    return result;
 }
 
 int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
     int n;
     std::cin >> n;
     if (n == 0) {
@@ -42,10 +46,9 @@ int main() {
         }
     }
 
-    std::vector<int> result(n);
-    countingSort(vec, result, min, max);
+    auto result = countingSort(vec, min, max);
 
     for (auto elem : result) {
-        printf("%d ", elem);
+        std::cout << elem << ' ';
     }
 }
