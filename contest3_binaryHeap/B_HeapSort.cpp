@@ -78,9 +78,10 @@ int main() {
         std::cin >> vec[i];
     }
 
-    auto heap = new HeapSorted(vec);
-    auto res = heap->getHeap();
+    auto heap = HeapSorted(vec);
+    auto res = heap.getHeap();
     for (int i = 0; i < n; ++i) {
         std::cout << res[i] << " ";
     }
+    return 0;
 }
