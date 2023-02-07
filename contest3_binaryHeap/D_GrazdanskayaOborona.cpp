@@ -12,18 +12,12 @@
 struct Point {
     int id;
     int distance;
-    unsigned char bytes[4];
 
     Point() = default;
 
     Point(int id, int distance) : id(id), distance(distance) {
-        bytes[0] = (distance & 0x000000FF);
-        bytes[1] = (distance & 0x0000FF00) >> 8;
-        bytes[2] = (distance & 0x00FF0000) >> 16;
-        bytes[3] = (distance & 0xFF000000) >> 24;
     }
 
-public:
     static void sortByDistance(std::vector<Point> &vec) {
         for (size_t i = 1; i < vec.size(); ++i) {
             for (auto j = i; j > 0; --j) {
@@ -34,39 +28,76 @@ public:
         }
     }
 
-    //    bool operator<(Point other) const {
-    //        return distance < other.distance;
-    //    }
-    //
-    //    bool operator>(Point other) const {
-    //        return distance > other.distance;
-    //    }
+    bool operator<(Point other) const {
+        return distance < other.distance;
+    }
+
+    bool operator>(Point other) const {
+        return distance > other.distance;
+    }
 };
 
-std::vector<Point> countingSort(const std::vector<Point> &vec, int place, int min = 0,
-                                int max = 255) {
-    int k = max - min + 1;
-    std::vector<int> b(k);
-    for (auto &number : vec) {
-        ++b[number.bytes[place]];
-    }
-    // array of partial sums
-    for (int i = 1; i < k; ++i) {
-        b[i] = b[i - 1] + b[i];
+template <class ValueType>
+class HeapSorted {
+    std::vector<ValueType> list_;
+    int size_;
+
+public:
+    explicit HeapSorted(const std::vector<ValueType> &vec) {
+        size_ = static_cast<int>(vec.size());
+        buildHeap(vec);
+        for (int i = size_ - 1; i >= 0; --i) {
+            list_[i] = getMax();
+            heapify(0);
+        }
     }
 
-    std::vector<Point> result(vec.size());
-    for (int i = vec.size() - 1; i >= 0; --i) {
-        result[--b[vec[i].bytes[place] - min]] = vec[i];
+    std::vector<ValueType> &getHeap() {
+        return list_;
     }
-    return result;
-}
 
-void digitalSorting(std::vector<Point> &vec) {
-    for (int i = 0; i < 4; ++i) {
-        vec = countingSort(vec, i);
+private:
+    ValueType getMax() {
+        ValueType res = list_[0];
+        list_[0] = list_[size_ - 1];
+        --size_;
+        return res;
     }
-}
+
+    void heapify(int i = 0) {
+        int left_child;
+        int right_child;
+        int largest_child;
+
+        for (;;) {
+            left_child = 2 * i + 1;
+            right_child = 2 * i + 2;
+            largest_child = i;
+
+            if (left_child < size_ && list_[left_child] > list_[largest_child]) {
+                largest_child = left_child;
+            }
+            if (right_child < size_ && list_[right_child] > list_[largest_child]) {
+                largest_child = right_child;
+            }
+            if (largest_child == i) {
+                break;
+            }
+
+            ValueType temp = list_[i];
+            list_[i] = list_[largest_child];
+            list_[largest_child] = temp;
+            i = largest_child;
+        }
+    }
+
+    void buildHeap(const std::vector<ValueType> &vec) {
+        list_ = vec;
+        for (int i = size_ / 2; i >= 0; --i) {
+            heapify(i);
+        }
+    }
+};
 
 int distanceBetween(Point &village, Point &shelter) {
     return std::abs(village.distance - shelter.distance);
@@ -93,8 +124,11 @@ int main() {
         shelters[i - 1] = Point(i, distance);
     }
 
-    digitalSorting(villages);
-    digitalSorting(shelters);
+    HeapSorted<Point> heap_villages = HeapSorted<Point>(villages);
+    HeapSorted<Point> heap_shelters = HeapSorted<Point>(shelters);
+
+    villages = heap_villages.getHeap();
+    shelters = heap_shelters.getHeap();
 
     // closer shelter for each village
     std::vector<int> result(n);
