@@ -36,6 +36,7 @@ public:
 
     Heap &operator=(Heap &&other) {
         list_ = std::move(other.list_);
+        size_ = list_.size();
         return *this;
     }
 
@@ -51,6 +52,7 @@ public:
 
     void insert(const ValueType &value) {
         list_.push_back(value);
+        ++size_;
         if (list_.size() == 1) {
             return;
         }
@@ -71,20 +73,37 @@ public:
         ValueType res = list_[0];
         list_[0] = list_[list_.size() - 1];
         list_.pop_back();
-        // --size_;
+        --size_;
         heapify(0);
         return res;
     }
 
+    void sortHeap() {
+        size_ = static_cast<int>(list_.size());
+        buildHeap(list_);
+        for (auto i = size_ - 1; i >= 0; --i) {
+            list_[i] = getMax();
+            heapify(0);
+        }
+    }
+
 private:
     void buildHeap(const std::vector<ValueType> &vec) {
+        size_ = static_cast<int>(list_.size());
         list_ = vec;
-        for (int i = list_.size() / 2; i >= 0; --i) {
+        for (int i = static_cast<int>(list_.size()) / 2; i >= 0; --i) {
             heapify(i);
         }
     }
 
-    void heapify(int i = 0) {
+    int getMax() {
+        int res = list_[0];
+        list_[0] = list_[size_ - 1];
+        --size_;
+        return res;
+    }
+
+    void heapify(int i) {
         int left_child;
         int right_child;
         int largest_child;
@@ -94,10 +113,10 @@ private:
             right_child = 2 * i + 2;
             largest_child = i;
 
-            if (left_child < list_.size() && list_[left_child] > list_[largest_child]) {
+            if (left_child < size_ && list_[left_child] > list_[largest_child]) {
                 largest_child = left_child;
             }
-            if (right_child < list_.size() && list_[right_child] > list_[largest_child]) {
+            if (right_child < size_ && list_[right_child] > list_[largest_child]) {
                 largest_child = right_child;
             }
             if (largest_child == i) {
@@ -112,6 +131,7 @@ private:
     }
 
     std::vector<ValueType> list_;
+    int size_ = 0;
 };
 
 int main() {
@@ -129,4 +149,9 @@ int main() {
 
     heap = heap_vec;
     auto heap2 = Heap<int>(heap);
+
+    Heap<int> heap_to_sort = Heap<int>({5, 7, 2, 2, 1, 3, 4});
+    heap_to_sort.sortHeap();
+
+    return 0;
 }
