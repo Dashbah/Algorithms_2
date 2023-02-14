@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "contest3_binaryHeap",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "A::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-A-Debug-ae6663906e3082583ef5.json",
+					"name" : "A",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "A0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-A0-Debug-94685b31b12b62eb58dc.json",
+					"name" : "A0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "B::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-B-Debug-90e260bd7a4d40708798.json",
+					"name" : "B",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "C::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-C-Debug-cce7b5c71844db2d542e.json",
+					"name" : "C",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "D::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-D-Debug-5e69ca2adf49b39d8fa8.json",
+					"name" : "D",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "E::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-E-Debug-636014ab4dbcadf05247.json",
+					"name" : "E",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "contest3_binaryHeap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-contest3_binaryHeap-Debug-0a276d828495d1c0f457.json",
+					"name" : "contest3_binaryHeap",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug",
+		"source" : "/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,5 @@
+# ninja log v5
+704	762	1666460814930247507	contest_dop	9d52b6d579ee2647
+2	698	1666380390487299671	CMakeFiles/contest_dop.dir/csa.cpp.o	99dcc0548efd6279
+5	82	1666461365300894114	build.ninja	93ee9d0b69377dd
+2	704	1666460814869546505	CMakeFiles/contest_dop.dir/main.cpp.o	7888524f10ceabff

@@ -1,0 +1,9 @@
+# ninja log v5
+2	714	1674816951743457688	CMakeFiles/contest2_linearAndIterativeSortings.dir/C_MnogoDronov.cpp.o	661552d17846dd01
+1	488	1674753638544964836	CMakeFiles/contest2_linearAndIterativeSortings.dir/B_DigitalSorting.cpp.o	4c5a76cbddcb9ae
+0	68	1675195183966890025	build.ninja	e3bd1d693e625ab8
+1	450	1674665346365932320	CMakeFiles/contest2_linearAndIterativeSortings.dir/A_CountingSort.cpp.o	b2ea1ab54a7b7b9d
+767	828	1674825708655404978	contest2_linearAndIterativeSortings	d29f4811b222199b
+1	767	1674825708590674208	CMakeFiles/contest2_linearAndIterativeSortings.dir/D_Palindrome.cpp.o	58c8f1a9ea661484
+0	473	1675195477348880067	CMakeFiles/contest2_linearAndIterativeSortings.dir/E_Keyboard.cpp.o	2827c697ed458f57
+474	572	1675195477449070450	contest2_linearAndIterativeSortings	ff608ed03e737d54

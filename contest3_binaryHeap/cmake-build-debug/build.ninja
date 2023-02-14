@@ -1,0 +1,361 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: contest3_binaryHeap
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target contest3_binaryHeap
+
+
+#############################################
+# Order-only phony target for contest3_binaryHeap
+
+build cmake_object_order_depends_target_contest3_binaryHeap: phony || CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/main.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/main.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/A0_HeapLastIndex.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/A0_HeapLastIndex.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/A0_HeapLastIndex.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/A_LastHeapElement.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/A_LastHeapElement.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/A_LastHeapElement.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/B_HeapSort.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/B_HeapSort.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/B_HeapSort.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/C_Heap.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/C_Heap.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/C_Heap.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/D_GrazdanskayaOborona.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/D_GrazdanskayaOborona.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/D_GrazdanskayaOborona.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+build CMakeFiles/contest3_binaryHeap.dir/E_LifeAfterZAVOD.cpp.o: CXX_COMPILER__contest3_binaryHeap_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/E_LifeAfterZAVOD.cpp || cmake_object_order_depends_target_contest3_binaryHeap
+  DEP_FILE = CMakeFiles/contest3_binaryHeap.dir/E_LifeAfterZAVOD.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  OBJECT_FILE_DIR = CMakeFiles/contest3_binaryHeap.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target contest3_binaryHeap
+
+
+#############################################
+# Link the executable contest3_binaryHeap
+
+build contest3_binaryHeap: CXX_EXECUTABLE_LINKER__contest3_binaryHeap_Debug CMakeFiles/contest3_binaryHeap.dir/main.cpp.o CMakeFiles/contest3_binaryHeap.dir/A0_HeapLastIndex.cpp.o CMakeFiles/contest3_binaryHeap.dir/A_LastHeapElement.cpp.o CMakeFiles/contest3_binaryHeap.dir/B_HeapSort.cpp.o CMakeFiles/contest3_binaryHeap.dir/C_Heap.cpp.o CMakeFiles/contest3_binaryHeap.dir/D_GrazdanskayaOborona.cpp.o CMakeFiles/contest3_binaryHeap.dir/E_LifeAfterZAVOD.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/contest3_binaryHeap.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = contest3_binaryHeap
+  TARGET_PDB = contest3_binaryHeap.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A
+
+
+#############################################
+# Order-only phony target for A
+
+build cmake_object_order_depends_target_A: phony || CMakeFiles/A.dir
+
+build CMakeFiles/A.dir/A0_HeapLastIndex.cpp.o: CXX_COMPILER__A_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/A0_HeapLastIndex.cpp || cmake_object_order_depends_target_A
+  DEP_FILE = CMakeFiles/A.dir/A0_HeapLastIndex.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/A.dir
+  OBJECT_FILE_DIR = CMakeFiles/A.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A
+
+
+#############################################
+# Link the executable A
+
+build A: CXX_EXECUTABLE_LINKER__A_Debug CMakeFiles/A.dir/A0_HeapLastIndex.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/A.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = A
+  TARGET_PDB = A.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A0
+
+
+#############################################
+# Order-only phony target for A0
+
+build cmake_object_order_depends_target_A0: phony || CMakeFiles/A0.dir
+
+build CMakeFiles/A0.dir/A_LastHeapElement.cpp.o: CXX_COMPILER__A0_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/A_LastHeapElement.cpp || cmake_object_order_depends_target_A0
+  DEP_FILE = CMakeFiles/A0.dir/A_LastHeapElement.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/A0.dir
+  OBJECT_FILE_DIR = CMakeFiles/A0.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A0
+
+
+#############################################
+# Link the executable A0
+
+build A0: CXX_EXECUTABLE_LINKER__A0_Debug CMakeFiles/A0.dir/A_LastHeapElement.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/A0.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = A0
+  TARGET_PDB = A0.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B
+
+
+#############################################
+# Order-only phony target for B
+
+build cmake_object_order_depends_target_B: phony || CMakeFiles/B.dir
+
+build CMakeFiles/B.dir/B_HeapSort.cpp.o: CXX_COMPILER__B_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/B_HeapSort.cpp || cmake_object_order_depends_target_B
+  DEP_FILE = CMakeFiles/B.dir/B_HeapSort.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/B.dir
+  OBJECT_FILE_DIR = CMakeFiles/B.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B
+
+
+#############################################
+# Link the executable B
+
+build B: CXX_EXECUTABLE_LINKER__B_Debug CMakeFiles/B.dir/B_HeapSort.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/B.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = B
+  TARGET_PDB = B.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C
+
+
+#############################################
+# Order-only phony target for C
+
+build cmake_object_order_depends_target_C: phony || CMakeFiles/C.dir
+
+build CMakeFiles/C.dir/C_Heap.cpp.o: CXX_COMPILER__C_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/C_Heap.cpp || cmake_object_order_depends_target_C
+  DEP_FILE = CMakeFiles/C.dir/C_Heap.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/C.dir
+  OBJECT_FILE_DIR = CMakeFiles/C.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C
+
+
+#############################################
+# Link the executable C
+
+build C: CXX_EXECUTABLE_LINKER__C_Debug CMakeFiles/C.dir/C_Heap.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/C.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = C
+  TARGET_PDB = C.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target D
+
+
+#############################################
+# Order-only phony target for D
+
+build cmake_object_order_depends_target_D: phony || CMakeFiles/D.dir
+
+build CMakeFiles/D.dir/D_GrazdanskayaOborona.cpp.o: CXX_COMPILER__D_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/D_GrazdanskayaOborona.cpp || cmake_object_order_depends_target_D
+  DEP_FILE = CMakeFiles/D.dir/D_GrazdanskayaOborona.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/D.dir
+  OBJECT_FILE_DIR = CMakeFiles/D.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target D
+
+
+#############################################
+# Link the executable D
+
+build D: CXX_EXECUTABLE_LINKER__D_Debug CMakeFiles/D.dir/D_GrazdanskayaOborona.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/D.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = D
+  TARGET_PDB = D.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target E
+
+
+#############################################
+# Order-only phony target for E
+
+build cmake_object_order_depends_target_E: phony || CMakeFiles/E.dir
+
+build CMakeFiles/E.dir/E_LifeAfterZAVOD.cpp.o: CXX_COMPILER__E_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/E_LifeAfterZAVOD.cpp || cmake_object_order_depends_target_E
+  DEP_FILE = CMakeFiles/E.dir/E_LifeAfterZAVOD.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/E.dir
+  OBJECT_FILE_DIR = CMakeFiles/E.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target E
+
+
+#############################################
+# Link the executable E
+
+build E: CXX_EXECUTABLE_LINKER__E_Debug CMakeFiles/E.dir/E_LifeAfterZAVOD.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/E.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = E
+  TARGET_PDB = E.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap -B/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug
+
+build all: phony contest3_binaryHeap A A0 B C D E
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

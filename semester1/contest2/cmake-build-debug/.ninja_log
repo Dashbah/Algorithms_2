@@ -1,0 +1,5 @@
+# ninja log v5
+4	465	1664198380015516972	CMakeFiles/contest2.dir/realiseAndSort.cpp.o	7fa2a876858f9c63
+5	725	1664211746171961013	CMakeFiles/contest2.dir/Spin.cpp.o	dc530f63cc9d0c17
+725	787	1664211746236591336	contest2	3120090531ce0144
+0	82	1664466636593924916	build.ninja	cfb4dabefe5c7e3f
