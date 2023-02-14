@@ -1,8 +1,10 @@
 //
 // Created by Dashbah on 13.02.2023.
 // sourse: https://ru.algorithmica.org/cs/decomposition/scanline/
+// quick sort: https://www.geeksforgeeks.org/cpp-program-for-quicksort/
 #include <iostream>
 #include <vector>
+#include <iterator>
 
 struct Event {
     int x, type, idx;
@@ -10,16 +12,59 @@ struct Event {
     bool operator<(Event other) const {
         return (x < other.x || (x == other.x && type > other.type));
     }
+
+    bool operator<=(Event other) const {
+        return (*this < other) || (x == other.x && type == other.type);
+    }
 };
 
-void insertionSort(std::vector<Event> &vec) {
-    for (size_t current = 0; current != vec.size(); ++current) {
-        for (auto j = current; j != 0 && vec[j] < vec[j - 1]; --j) {
-            auto val = vec[j - 1];
-            vec[j - 1] = vec[j];
-            vec[j] = val;
+template <typename ValueType>
+int partition(std::vector<ValueType> &vec, int start, int end) {
+    ValueType pivot = vec[start];
+
+    int count = 0;
+    for (int i = start + 1; i <= end; i++) {
+        if (vec[i] <= pivot) {
+            count++;
         }
     }
+
+    // Giving pivot element its correct position
+    int pivot_index = start + count;
+    std::swap(vec[pivot_index], vec[start]);
+
+    // Sorting left and right parts of the pivot element
+    int i = start, j = end;
+    while (i < pivot_index && j > pivot_index) {
+        while (vec[i] <= pivot) {
+            i++;
+        }
+        while (pivot < vec[j]) {
+            j--;
+        }
+        if (i < pivot_index && j > pivot_index) {
+            std::swap(vec[i++], vec[j--]);
+        }
+    }
+
+    return pivot_index;
+}
+
+template <typename ValueType>
+void quickSort(std::vector<ValueType> &vec, int start, int end) {
+    // base case
+    if (start >= end) {
+        return;
+    }
+
+    // partitioning the array
+    int p = partition(vec, start, end);
+
+    // Sorting the left part
+    quickSort(vec, start, p - 1);
+
+    // Sorting the right part
+    quickSort(vec, p + 1, end);
 }
 
 void scanLine() {
@@ -41,7 +86,7 @@ void scanLine() {
     //    std::sort(events.begin(), events.end(), [](Event a, Event b) {
     //        return (a.x < b.x || (a.x == b.x && a.type > b.type));
     //    });
-    insertionSort(events);
+    quickSort(events, 0, static_cast<int>(events.size()) - 1);
 
     std::vector<int> ans(m);
     int cnt = 0;
