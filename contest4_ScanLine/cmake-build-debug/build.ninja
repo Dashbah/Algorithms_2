@@ -52,30 +52,6 @@ build CMakeFiles/contest4_ScanLine.dir/main.cpp.o: CXX_COMPILER__contest4_ScanLi
   OBJECT_DIR = CMakeFiles/contest4_ScanLine.dir
   OBJECT_FILE_DIR = CMakeFiles/contest4_ScanLine.dir
 
-build CMakeFiles/contest4_ScanLine.dir/A_DotsAndLines.cpp.o: CXX_COMPILER__contest4_ScanLine_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest4_ScanLine/A_DotsAndLines.cpp || cmake_object_order_depends_target_contest4_ScanLine
-  DEP_FILE = CMakeFiles/contest4_ScanLine.dir/A_DotsAndLines.cpp.o.d
-  FLAGS = -Wall -g -fsanitize=address -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/contest4_ScanLine.dir
-  OBJECT_FILE_DIR = CMakeFiles/contest4_ScanLine.dir
-
-build CMakeFiles/contest4_ScanLine.dir/B_maxSquare.cpp.o: CXX_COMPILER__contest4_ScanLine_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest4_ScanLine/B_maxSquare.cpp || cmake_object_order_depends_target_contest4_ScanLine
-  DEP_FILE = CMakeFiles/contest4_ScanLine.dir/B_maxSquare.cpp.o.d
-  FLAGS = -Wall -g -fsanitize=address -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/contest4_ScanLine.dir
-  OBJECT_FILE_DIR = CMakeFiles/contest4_ScanLine.dir
-
-build CMakeFiles/contest4_ScanLine.dir/C_MaxSum.cpp.o: CXX_COMPILER__contest4_ScanLine_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest4_ScanLine/C_MaxSum.cpp || cmake_object_order_depends_target_contest4_ScanLine
-  DEP_FILE = CMakeFiles/contest4_ScanLine.dir/C_MaxSum.cpp.o.d
-  FLAGS = -Wall -g -fsanitize=address -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/contest4_ScanLine.dir
-  OBJECT_FILE_DIR = CMakeFiles/contest4_ScanLine.dir
-
-build CMakeFiles/contest4_ScanLine.dir/E_PrefixSumsMatrix.cpp.o: CXX_COMPILER__contest4_ScanLine_Debug /Users/dashbah/Desktop/repo/Algorithms_2/contest4_ScanLine/E_PrefixSumsMatrix.cpp || cmake_object_order_depends_target_contest4_ScanLine
-  DEP_FILE = CMakeFiles/contest4_ScanLine.dir/E_PrefixSumsMatrix.cpp.o.d
-  FLAGS = -Wall -g -fsanitize=address -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/contest4_ScanLine.dir
-  OBJECT_FILE_DIR = CMakeFiles/contest4_ScanLine.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target contest4_ScanLine
@@ -84,7 +60,7 @@ build CMakeFiles/contest4_ScanLine.dir/E_PrefixSumsMatrix.cpp.o: CXX_COMPILER__c
 #############################################
 # Link the executable contest4_ScanLine
 
-build contest4_ScanLine: CXX_EXECUTABLE_LINKER__contest4_ScanLine_Debug CMakeFiles/contest4_ScanLine.dir/main.cpp.o CMakeFiles/contest4_ScanLine.dir/A_DotsAndLines.cpp.o CMakeFiles/contest4_ScanLine.dir/B_maxSquare.cpp.o CMakeFiles/contest4_ScanLine.dir/C_MaxSum.cpp.o CMakeFiles/contest4_ScanLine.dir/E_PrefixSumsMatrix.cpp.o
+build contest4_ScanLine: CXX_EXECUTABLE_LINKER__contest4_ScanLine_Debug CMakeFiles/contest4_ScanLine.dir/main.cpp.o
   FLAGS = -Wall -g -fsanitize=address -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/contest4_ScanLine.dir
   POST_BUILD = :
