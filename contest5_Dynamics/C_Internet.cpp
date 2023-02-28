@@ -15,8 +15,21 @@ int compute(const std::vector<Room> &rooms) {
     dp[1] = std::min(std::min(rooms[0].a + rooms[1].a, rooms[0].a + rooms[0].b),
                      rooms[0].b + rooms[1].a);
     for (size_t i = 2; i < rooms.size(); ++i) {
-        dp[i] = std::min(std::min(dp[i - 1] + rooms[i - 1].b, dp[i - 1] + rooms[i].a),
-                         dp[i - 2] + rooms[i - 1].b + rooms[i].a);
+        int val = rooms[i - 1].b;
+        int min = dp[i - 2] + val;
+        for (size_t j = i - 1; j >= 2; --j) {
+            val += rooms[j - 1].b;
+            int temp = dp[j - 2] + val;
+            if (temp < min) {
+                min = temp;
+            }
+        }
+        val += rooms[0].b;
+        if (val < min) {
+            min = val;
+        }
+        min += rooms[i].a;
+        dp[i] = std::min(std::min(dp[i - 1] + rooms[i - 1].b, dp[i - 1] + rooms[i].a), min);
     }
     return dp.back();
 }
