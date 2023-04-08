@@ -1,6 +1,6 @@
 //
 // Created by Dashbah on 13.02.2023.
-// this one is not working!!! ATTENTION!!!
+// http://algolist.ru/maths/linalg/fmaxeminor.php
 #include <iostream>
 #include <vector>
 
