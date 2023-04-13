@@ -1,0 +1,4 @@
+/Users/dashbah/Desktop/repo/yandexIntern/cmake-build-debug/CMakeFiles/B.dir
+/Users/dashbah/Desktop/repo/yandexIntern/cmake-build-debug/CMakeFiles/C.dir
+/Users/dashbah/Desktop/repo/yandexIntern/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dashbah/Desktop/repo/yandexIntern/cmake-build-debug/CMakeFiles/rebuild_cache.dir
