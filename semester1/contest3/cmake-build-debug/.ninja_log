@@ -1,9 +1,0 @@
-# ninja log v5
-2	437	1664894354669848194	CMakeFiles/contest3.dir/Merge.cpp.o	8bc1faef25adb1a7
-480	521	1664895270711603553	contest3	9564e238b709d203
-0	49	1665840057070962231	build.ninja	15193443bc07ec33
-2	480	1664895270668759126	CMakeFiles/contest3.dir/bracketSequence.cpp.o	63d23e45725dd5d2
-6	165	1664887111676755120	CMakeFiles/contest3.dir/myList_2.cpp.o	36a772a4fd7fc260
-3	1127	1664835167301357192	CMakeFiles/contest3.dir/List_1.cpp.o	14f14a0d178826ef
-2	1159	1664835300709284866	CMakeFiles/contest3.dir/List.cpp.o	b2f0c9d7eb4c5566
-2	415	1664894354646693950	CMakeFiles/contest3.dir/myList.cpp.o	f35897bf74169832

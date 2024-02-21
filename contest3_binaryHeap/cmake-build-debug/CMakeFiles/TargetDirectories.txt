@@ -1,9 +1,0 @@
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/contest3_binaryHeap.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/A.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/A0.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/B.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/C.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/D.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/E.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dashbah/Desktop/repo/Algorithms_2/contest3_binaryHeap/cmake-build-debug/CMakeFiles/rebuild_cache.dir

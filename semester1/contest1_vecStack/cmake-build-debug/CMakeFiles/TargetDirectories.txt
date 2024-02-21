@@ -1,3 +1,0 @@
-/Users/dashbah/Desktop/algorithms/cmake-build-debug/CMakeFiles/algorithms.dir
-/Users/dashbah/Desktop/algorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dashbah/Desktop/algorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
